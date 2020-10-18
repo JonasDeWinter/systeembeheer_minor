@@ -4,3 +4,5 @@
 # Address blocks in CIDR notation
 193.191.177.6
 0:0:0:0:0:ffff:c1bf:b106
+
+192.168.0.0/24
