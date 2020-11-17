@@ -3,5 +3,5 @@
 ff02::1		ip6-allnodes
 ff02::2		ip6-allrouters
 # --- BEGIN PVE ---
-193.191.177.162 jonas-dewinter.uclllabs.be jonas-dewinter
+193.191.177.162 ns.jonas-dewinter.uclllabs.be jonas-dewinter
 # --- END PVE ---
