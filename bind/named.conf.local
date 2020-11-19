@@ -9,5 +9,4 @@
 zone "jonas-dewinter.sb.uclllabs.be" {
       type master;
       file "/etc/bind/db.jonas-dewinter.sb.uclllabs.be";
-      allow-transfer { 193.191.176.254; };
 };
