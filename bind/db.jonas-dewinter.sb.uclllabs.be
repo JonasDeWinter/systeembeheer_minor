@@ -4,16 +4,17 @@
 ; Instead, copy it, edit named.conf, and use that copy.
 ;
 $TTL	86400
-$ORIGIN ns.jonas-dewinter.sb.uclllabs.be.
-@	IN	SOA	ns.jonas-dewinter.sb.uclllabs.be. hostmaster.jonas-dewinter.sb.uclllabs.be. (
-			      1		; Serial
+
+@	IN	SOA	ns.jonas-dewinter.sb.uclllabs.be. admin.jonas-dewinter.sb.uclllabs.be. (
+			      6		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			  86400 )	; Negative Cache TTL
 ;
-	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.
-	IN      NS      ns1.uclllabs.be.
+@	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.
+@	IN      NS      ns1.uclllabs.be.
+@	IN	NS	ns2.uclllabs.be.
 
 www	IN	A	193.191.177.162
 ns	IN	A	193.191.177.162
