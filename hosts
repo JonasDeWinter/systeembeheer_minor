@@ -2,6 +2,7 @@
 ::1		localhost ip6-localhost ip6-loopback
 ff02::1		ip6-allnodes
 ff02::2		ip6-allrouters
+193.191.177.162 www1.jonas-dewinter.uclllabs.be
 # --- BEGIN PVE ---
 193.191.177.162 ns.jonas-dewinter.uclllabs.be jonas-dewinter
 # --- END PVE ---
