@@ -2,7 +2,6 @@
 	<VirtualHost _default_:443>
 		ServerAdmin webmaster@localhost
 
-		ServerName jonas-dewinter.sb.uclllabs.be
 		DocumentRoot /var/www/html
 
 		# Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
@@ -30,8 +29,8 @@
 		#   /usr/share/doc/apache2/README.Debian.gz for more info.
 		#   If both key and certificate are stored in the same file, only the
 		#   SSLCertificateFile directive is needed.
-		SSLCertificateFile	/etc/ssl/certs/apache-selfsigned.crt
-		SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
+		SSLCertificateFile	/etc/ssl/certs/ssl-cert-snakeoil.pem
+		SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
 
 		#   Server Certificate Chain:
 		#   Point SSLCertificateChainFile at a file containing the
