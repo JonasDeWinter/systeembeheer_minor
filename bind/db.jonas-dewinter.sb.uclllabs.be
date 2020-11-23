@@ -6,7 +6,7 @@
 $TTL	86400
 
 @	IN	SOA	ns.jonas-dewinter.sb.uclllabs.be. admin.jonas-dewinter.sb.uclllabs.be. (
-			      7		; Serial
+			      8		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -22,3 +22,5 @@ test	IN	A	193.191.177.254
 @	IN	A	193.191.177.162
 www1	IN	A	193.191.177.162
 www2	IN	A	193.191.177.162
+secure	IN	A	193.191.177.162
+supersecure IN	A	193.191.177.162
