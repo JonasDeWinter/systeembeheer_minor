@@ -16,6 +16,6 @@
 # * IMPORTANT: Additional settings that can override those from this file!
 #   The files must end with '.cnf', otherwise they'll be ignored.
 #
-
+bind-address=193.191.177.6
 !includedir /etc/mysql/conf.d/
 !includedir /etc/mysql/mysql.conf.d/
