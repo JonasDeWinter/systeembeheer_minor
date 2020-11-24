@@ -37,7 +37,7 @@ mkdir $(echo "/var/www/html/$domain")
 touch $(echo "/var/www/html/$domain/index.html")
 
 # append message to index.html
-echo "welcome $domain.jonas-dewiner.sb.ucllabs.be" > $(echo "/var/www/html/$domain/index.html")
+echo "welcome $domain.jonas-dewinter.sb.uclllabs.be" > $(echo "/var/www/html/$domain/index.html")
 
 # enable site and reload apache2
 a2ensite $domain.conf
