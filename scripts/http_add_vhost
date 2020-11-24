@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# check if running as root
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit 0
+fi
+
+# get domain
+if [[ "$1" != "" ]]; then
+  domain="`echo $1 | awk -F . '{print $1}'`"
+else
+  echo "No domain given as first argument"
+  exit 0
+fi
+
+checkdomain=$(grep -E "$domain[[:space:]]*IN[[:space:]]*A" /etc/bind/zones/db.jonas-dewinter.sb.uclllabs.be)
+
+if [ -z "$checkdomain" ]; then
+	echo "domain $domain does not exist"
+	exit 0
+fi
+# make virtual host config
+echo "<VirtualHost *:80>
+    ServerName $domain.jonas-dewinter.sb.uclllabs.be
+    DocumentRoot /var/www/html/$domain
+    ErrorLog \${APACHE_LOG_DIR}/$domain-error.log
+    CustomLog \${APACHE_LOG_DIR}/$domain-access.log combined
+    <Directory /var/www/html/$domain>
+         AllowOverride All
+    </Directory>
+
+</VirtualHost>" > $(echo "/etc/apache2/sites-available/$domain.conf")
+
+# make document root with index.html
+mkdir $(echo "/var/www/html/$domain")
+touch $(echo "/var/www/html/$domain/index.html")
+
+# append message to index.html
+echo "welcome $domain.jonas-dewiner.sb.ucllabs.be" > $(echo "/var/www/html/$domain/index.html")
+
+# enable site and reload apache2
+a2ensite $domain.conf
+systemctl reload apache2

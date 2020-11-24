@@ -6,7 +6,7 @@
 $TTL	86400
 
 @	IN	SOA	ns.jonas-dewinter.sb.uclllabs.be. admin.jonas-dewinter.sb.uclllabs.be. (
-			     11		; Serial
+			     41		;Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -35,3 +35,18 @@ supersecure.jonas-dewinter.sb.uclllabs.be.   IN      CAA     0 iodef "mailto:jon
 @       IN      CAA     0 issue "letsencrypt.org"
 @       IN      CAA     0 iodef "mailto:jonas.dewinter@student.ucll.be"
 
+foobar	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.
+foobar	IN	A	193.191.177.162
+nieuw	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.
+nieuw	IN	A	193.191.177.162
+hallo	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.
+hallo	IN	A	193.191.177.162
+mwoah	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.
+mwoah	IN	A	193.191.177.162
+
+nieuwstezone	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.
+nieuwstezone	IN	A	193.191.177.162
+newtest	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.
+newtest	IN	A	193.191.177.162
+nogeentest	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.
+nogeentest	IN	A	193.191.177.162

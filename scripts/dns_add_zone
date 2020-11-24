@@ -1,0 +1,50 @@
+#!/bin/bash
+
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit 0
+fi
+
+
+if [[ "$1" != "" ]]; then
+  ZONE="$1"
+else
+  echo "No domain given as first argument"
+  exit 0
+fi
+
+check=$(ls /etc/bind/zones | grep "db.$ZONE")
+if [[ "$check" == "db.$ZONE" ]]; then
+	echo "db.$ZONE bestaat al "
+	exit 0
+fi
+
+touch $(echo "/etc/bind/zones/db.$ZONE")
+
+echo "\$TTL 360
+@    IN SOA ns.$ZONE.jonas-dewinter.sb.uclllabs.be. admin.jonas-dewinter.sb.uclllabs.be. (
+		0	; Serial
+		3H	; Refresh
+		1H	; Retry
+		1W	; Expire
+		3H )	; Negative Cache TTL
+
+@		IN	NS	ns.jonas-dewinter.sb.uclllabs.be." > /etc/bind/zones/db.$1
+
+# Add the records for the new subzone to the main zone
+echo "$1	IN	NS	ns.jonas-dewinter.sb.uclllabs.be." >> /etc/bind/zones/db.jonas-dewinter.sb.uclllabs.be
+
+echo "$ZONE	IN	A	193.191.177.162" >> /etc/bind/zones/db.jonas-dewinter.sb.uclllabs.be
+
+# put a description for the zone in the config
+echo "zone \"$ZONE.jonas-dewinter.sb.uclllabs.be\" {
+	type master;
+	file \"/etc/bind/zones/sb.$ZONE\";
+};" >> /etc/bind/named.conf.mrt-zones
+
+
+perl -i -pe '/Serial/ && s/(\d+)/$1+1 . $2/e' /etc/bind/zones/db.jonas-dewinter.sb.uclllabs.be
+perl -i -pe '/Serial/ && s/(\d+)/$1+1 . $2/e' /etc/bind/zones/db.$ZONE
+
+rndc reload
+systemctl restart apache2

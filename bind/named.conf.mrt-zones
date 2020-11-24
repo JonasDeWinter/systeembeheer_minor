@@ -1,0 +1,28 @@
+zone "foobar.jonas-dewinter.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/sb.foobar";
+};
+zone "nieuw.jonas-dewinter.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/sb.nieuw";
+};
+zone "hallo.jonas-dewinter.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/sb.hallo";
+};
+zone "mwoah.jonas-dewinter.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/sb.mwoah";
+};
+zone "nieuwstezone.jonas-dewinter.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/sb.nieuwstezone";
+};
+zone "newtest.jonas-dewinter.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/sb.newtest";
+};
+zone "nogeentest.jonas-dewinter.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/sb.nogeentest";
+};
