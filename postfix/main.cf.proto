@@ -72,7 +72,7 @@ data_directory = /var/lib/postfix
 # and of most Postfix daemon processes.  Specify the name of a user
 # account THAT DOES NOT SHARE ITS USER OR GROUP ID WITH OTHER ACCOUNTS
 # AND THAT OWNS NO OTHER FILES OR PROCESSES ON THE SYSTEM.  In
-# particular, don't specify nobody or daemon. PLEASE USE A DEDICATED
+# particular, dont specify nobody or daemon. PLEASE USE A DEDICATED
 # USER.
 #
 #mail_owner = postfix
@@ -91,7 +91,7 @@ data_directory = /var/lib/postfix
 # from gethostname(). $myhostname is used as a default value for many
 # other configuration parameters.
 #
-#myhostname = host.domain.tld
+myhostname = mx.jonas-dewinter.sb.uclllabs.be
 #myhostname = virtual.domain.tld
 
 # The mydomain parameter specifies the local internet domain name.
@@ -99,7 +99,7 @@ data_directory = /var/lib/postfix
 # $mydomain is used as a default value for many other configuration
 # parameters.
 #
-#mydomain = domain.tld
+mydomain = jonas-dewinter.sb.uclllabs.be
 
 # SENDING MAIL
 # 
@@ -120,7 +120,7 @@ data_directory = /var/lib/postfix
 #
 #myorigin = /etc/mailname
 #myorigin = $myhostname
-#myorigin = $mydomain
+myorigin = $mydomain
 
 # RECEIVING MAIL
 
@@ -135,7 +135,7 @@ data_directory = /var/lib/postfix
 # Note: you need to stop/start Postfix when this parameter changes.
 #
 #inet_interfaces = all
-#inet_interfaces = $myhostname
+inet_interfaces = $myhostname
 #inet_interfaces = $myhostname, localhost
 
 # The proxy_interfaces parameter specifies the network interface
@@ -314,10 +314,9 @@ mynetworks = 127.0.0.0/8
 # list this system as their primary or backup MX host. See the
 # permit_mx_backup restriction description in postconf(5).
 #
-#relay_domains = $mydestination
+relay_domains = localhost, 127.0.0.1,10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
 
 # INTERNET OR INTRANET
-
 # The relayhost parameter specifies the default host to send mail to
 # when no entry is matched in the optional transport(5) table. When
 # no relayhost is given, mail is routed directly to the destination.
@@ -432,11 +431,11 @@ mynetworks = 127.0.0.0/8
 # DELIVERY TO MAILBOX
 #
 # The home_mailbox parameter specifies the optional pathname of a
-# mailbox file relative to a user's home directory. The default
+# mailbox file relative to a users home directory. The default
 # mailbox file is /var/spool/mail/user or /var/mail/user.  Specify
 # "Maildir/" for qmail-style delivery (the / is required).
 #
-#home_mailbox = Mailbox
+home_mailbox = /var/vmail/user
 #home_mailbox = Maildir/
  
 # The mail_spool_directory parameter specifies the directory where
