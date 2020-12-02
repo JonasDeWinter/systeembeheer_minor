@@ -1,0 +1,9 @@
+$TTL 360
+@    IN SOA ns.hey.jonas-dewinter.sb.uclllabs.be. admin.jonas-dewinter.sb.uclllabs.be. (
+		1	; Serial
+		3H	; Refresh
+		1H	; Retry
+		1W	; Expire
+		3H )	; Negative Cache TTL
+
+@		IN	NS	ns.jonas-dewinter.sb.uclllabs.be.

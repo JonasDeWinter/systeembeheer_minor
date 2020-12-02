@@ -26,3 +26,15 @@ zone "nogeentest.jonas-dewinter.sb.uclllabs.be" {
 	type master;
 	file "/etc/bind/zones/sb.nogeentest";
 };
+zone "testje.jonas-dewinter.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/sb.testje";
+};
+zone "newzone.jonas-dewinter.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/sb.newzone";
+};
+zone "hey.jonas-dewinter.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/zones/sb.hey";
+};

@@ -1,5 +1,5 @@
 [Match]
-Name = ns.jonas-dewinter.sb.uclllabs.be
+Name = eth0
 
 [Network]
 Description = Interface eth0 autoconfigured by PVE

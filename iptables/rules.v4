@@ -8,8 +8,6 @@
 -A INPUT -p udp -m udp --dport 123 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 53 -j ACCEPT
 -A INPUT -p udp -m udp --dport 53 -j ACCEPT
--A INPUT -d 193.191.177.6/32 -p tcp -m tcp --dport 3306 -j ACCEPT
--A INPUT -s 193.191.177.6/32 -p tcp -m tcp --dport 3306 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 3306 -j ACCEPT
 -A INPUT -s 193.191.177.6/32 -p tcp -m tcp --dport 3306 -j ACCEPT
 -A OUTPUT -p udp -m udp --sport 123 -j ACCEPT
