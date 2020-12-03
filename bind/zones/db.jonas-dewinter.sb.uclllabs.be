@@ -6,16 +6,16 @@
 $TTL	86400
 
 @	IN	SOA	ns.jonas-dewinter.sb.uclllabs.be. admin.jonas-dewinter.sb.uclllabs.be. (
-			     49		;Serial
+			     51		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			  86400 )	; Negative Cache TTL
-;
+
 @	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.
 @	IN      NS      ns1.uclllabs.be.
 @	IN	NS	ns2.uclllabs.be.
-;
+
 www	IN	A	193.191.177.162
 ns	IN	A	193.191.177.162
 test	IN	A	193.191.177.254
@@ -27,8 +27,12 @@ supersecure IN	A	193.191.177.162
 mail	IN	A	193.191.177.162
 
 
-;@	IN	MX 	5	mx
-mx      IN      MX      193.191.177.162
+ns	IN	AAAA	2001:6a8:2880:a077::a2
+@	IN	AAAA	2001:6a8:2880:a077::a2
+
+
+;@	IN	A 	5 mx
+;mx      IN      MX      193.191.177.162
 
 hallo   IN      A       193.191.177.162
 hallo	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.

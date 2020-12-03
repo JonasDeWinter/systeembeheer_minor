@@ -6,7 +6,6 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-include "/etc/bind/named.conf.mrt-zones";
 
 zone "jonas-dewinter.sb.uclllabs.be" {
       type master;

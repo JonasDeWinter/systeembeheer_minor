@@ -7,3 +7,10 @@ Address = 193.191.177.162/25
 Gateway = 193.191.177.254
 DHCP = no
 IPv6AcceptRA = false
+Gateway=2001:6a8:2880:a077::1
+DNS = 2001:6a8:2880:a077::a2
+Address=2001:6a8:2880:a077::a2/64
+
+[Route]
+Destination=2001:6a8:2880:a077::1
+Scope=link
