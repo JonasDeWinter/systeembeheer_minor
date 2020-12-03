@@ -26,7 +26,10 @@ options {
 
 	// disable recursion on authoritative DNS server.
 	recursion no;
-
+	//enable DNSSEC
+	dnssec-enable yes;
+	dnssec-validation yes;
+	dnssec-lookaside auto;
 	// enable the query log
 	querylog yes;
 	allow-query {any;};
