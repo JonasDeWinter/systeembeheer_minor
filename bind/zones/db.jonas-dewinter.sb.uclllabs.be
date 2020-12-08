@@ -6,7 +6,7 @@
 $TTL	86400
 
 @	IN	SOA	ns.jonas-dewinter.sb.uclllabs.be. admin.jonas-dewinter.sb.uclllabs.be. (
-			     51		; Serial
+			     54		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -65,3 +65,5 @@ newzone	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.
 newzone	IN	A	193.191.177.162
 hey	IN	NS	ns.jonas-dewinter.sb.uclllabs.be.
 hey	IN	A	193.191.177.162
+$INCLUDE /etc/bind/zones/Kjonas-dewinter.sb.uclllabs.be.+007+03830.key
+$INCLUDE /etc/bind/zones/Kjonas-dewinter.sb.uclllabs.be.+007+14605.key

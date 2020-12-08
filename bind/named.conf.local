@@ -9,5 +9,5 @@
 
 zone "jonas-dewinter.sb.uclllabs.be" {
       type master;
-      file "/etc/bind/zones/db.jonas-dewinter.sb.uclllabs.be";
+      file "/etc/bind/zones/db.jonas-dewinter.sb.uclllabs.be.signed";
 };

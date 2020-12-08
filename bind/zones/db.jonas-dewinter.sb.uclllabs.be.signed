@@ -1,0 +1,459 @@
+; File written on Fri Dec  4 14:59:58 2020
+; dnssec_signzone version 9.16.1-Ubuntu
+jonas-dewinter.sb.uclllabs.be. 86400 IN	SOA ns.jonas-dewinter.sb.uclllabs.be. admin.jonas-dewinter.sb.uclllabs.be. (
+					55         ; serial
+					604800     ; refresh (1 week)
+					86400      ; retry (1 day)
+					2419200    ; expire (4 weeks)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 7 4 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					bD44y8m4Y37aLO1b1vraH91ZXhbUpOFgkNu8
+					5ZFhD+VGU/1fhTyTOEWqrATNdmikG/53rInV
+					pXYZrkY1ytYfSr0oJi6v/gf/0Skl5mK/mlA6
+					88AID3ZznVzyC30ULK5yggYSIhmKF8o+fy5O
+					dFNGAx4hBdiMMfGaHmGl+vHYMIZbQsQdc8wl
+					Dog20N6TLqOZ6vBDRa7vwN3yp0qj9OdB0aVT
+					jS37lRXDHTb3pxdLRS02i1m1gCi+vVmlzC2v
+					ppdl+uK2+QSNqscTqh66uKxF+2/9kVnS6O/h
+					tRt9F7vLsues1X35axh3rzIwTa34aFrQhxrk
+					rwbMyRR4E1Bw04toVw== )
+			86400	NS	ns.jonas-dewinter.sb.uclllabs.be.
+			86400	NS	ns1.uclllabs.be.
+			86400	NS	ns2.uclllabs.be.
+			86400	RRSIG	NS 7 4 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					3yYkooaUv+vyO9yXWCs+dCRiqoeOtBAt7CEv
+					d8x7N7rdemIiC3QzlNDsQnusbsDkmp3pPqSk
+					FR42eUU7c07cEddwDU2HykzqH3eXot22Fri+
+					ffqYFdPEF+Tn3T2sGaTx3+6YKzlYT6XQzhwe
+					4ecQvSLRYVghW4x/p7+3EUfUxVWdMLLysdYL
+					t+wbAFSN78kRj+HuQzz0c8w3cib9nHsubv0J
+					fTPCctRF5PJGabi2ZxmxTM9F4jM/Mmk0MZVF
+					53+5wwA3tWmq4Ha1QgwU456f92yUYlTIyx4G
+					MG3BOYGEiU5o/CoR2t8K/Aa8/qaJEI57pcOa
+					8WoYD+5WS5JlS9ragQ== )
+			86400	A	193.191.177.162
+			86400	RRSIG	A 7 4 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					kvte72Qng2yZNVDxDWiTchPWKm5t4J34VXOM
+					RZ5llibqQAurPAmVs8E+uSMXV+Bvp7HW3y7S
+					9dwLUS1f8IFnOG/vnZfb/KNTcSPZiYN1f6EO
+					KiTSAckyNmBAwn7oqKN0k7gmhvhmEueXq1tR
+					Di/et381FDY6dnu5XSp6L54otOFjBmWML7Ho
+					BmFqfxiuL7+RZnAOtj/XKOmCNfNn6nwbnkvB
+					jqmdAl+b0Pxk0tqj62gW7M8pUltAGIt85hze
+					IiVxQ5K8i2exQWNmUqIk4IWp3ISdd5bvwLFr
+					gTq6y1JRFYRtngpz6/tVJLrc+Pcd3dLaApzi
+					Mz7gaKQvLYvVKzAb7A== )
+			86400	AAAA	2001:6a8:2880:a077::a2
+			86400	RRSIG	AAAA 7 4 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					FFtM5jyyKq64v3izObojWyT7OEUPGwZJ/peT
+					bBpHaSG9fzOhxQ+YCEhLVF9OlF6QBLDVpw9F
+					qW+7JZDNtBF4fHs5aKBlPjjHzgVNjpaQUujW
+					wn+yob6r7VNtPO5+txk1puiamssJSnCiiNn3
+					Lzf4oK0VBBCbRlRyc1dp4wWfT4yKtRHAFUGV
+					9tGPd3Zu7BbvcoWFvNUVK77V1YPi+1kE34Pd
+					7XbDJ79HCBcQ2+dSgonCA6jxkhJrimbdZ4hj
+					C/tU6XFL1PajP9hQ2ciQHuavdAYTP7sZurkM
+					rTv+AAE5TpHoSkd1EHMQHDpG6JZmwLnmS8WR
+					hXERvY0MiQUCK27Lfg== )
+			86400	DNSKEY	256 3 7 (
+					AwEAAerg8VzH1TKO2mXYZJUR1XsfIDgRn26e
+					pZDjrlcf8OphMidCPg5254IH/z4PjvZ3LR7I
+					3DPQq7mvStF0YochsqSpk4fdipXEUmuJiwIg
+					m+n8uK1JIJnoenjRyE8Op86SUr5Do53om50p
+					ayIqmgHlgZzrssp0maawxV3FORBPHPSvkz+n
+					KM5yDakvgnCePHqUb42i9AFm4D6+KGCXVlwj
+					Icn3ZbJ+pTI8V/GvdBBVfQTlYXsNu/3TsVNP
+					9bqjQ2ius48gGBUFbd6sy0yJduqgBS0yA+SI
+					Gwybfj9KhycIDH7MWWJ6x9zHDhB/ktqgjDKB
+					dxqiVQ1rL6ijL2wuefTx9uk=
+					) ; ZSK; alg = NSEC3RSASHA1 ; key id = 3830
+			86400	DNSKEY	257 3 7 (
+					AwEAAc6UDrSDXi3pkRzEZh9KVltL+LVweR+I
+					dp2fjK/wGsS+ev+E2Oa9coUPMFz2yCMDBGER
+					P0VS+rnyh2s333ujpNfBSiqBrG6Fi56qyUKe
+					wAkG461t66dIbVP+Alx64kcA/Y6eOh84pbzX
+					PFaN5i6WJGc4uSVAjjub0tBv5WKREcc7vnjW
+					BUIa/qFsnt+aWE72Gl25Ye1CDvHnwmxBvdgu
+					bmPJRAXpUnTlKrLW745mLfDeuIz10m7jiOu1
+					4+VhHIsQZB4W2xl9pMRHRQPVTfD1XKhQrgRb
+					aTfzE2LDmZMg+luvMYO7Hqg41K88xqupMwhl
+					t6lJivwZ5L68BZ2/vsh4Dfg5qAgMSeU3i06/
+					6a87tJxf0/MXtuTtAA+Eq954mR3LgL4LmW97
+					E21GUXeZTjOPAuIIWekrf3VyM8xpt+EMKlyu
+					gtXnibsWTWcs8MxTu2IO+e8wccDXgBBXFdQh
+					E2/Hu9jSiCmfntKiUzW/PscokQaqkynrMCR5
+					DCZFa0MoXfSAgm02eEY66gb52RO+kUuz8HlR
+					eiJkZj+VOAfT32PdX2u1pZSV2OXtS+USSBKo
+					LPLv8iVCvitVjGhp2gZO0U/EJrVu6DgodMj0
+					aii1oSZoqCtDr2Kte9eKHMBcFhvFXLGlqrgE
+					PjiHGySAlq6yKJ7BfPKSY1Xh9l+BAqdvd/ad
+					Lbr7
+					) ; KSK; alg = NSEC3RSASHA1 ; key id = 14605
+			86400	RRSIG	DNSKEY 7 4 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					C+7M2FLjv3Cg4jDm1bdbXdCbTxhbfWIjR+Eb
+					MbpJXBlDAU5Ilrr/AfE8tSLdR939VRGECVwx
+					Bkw12RQC9ofJp0Qx+uQFdkU2ZO62LTHpbdG8
+					Fk+ps6/x1h+/UcWv3EHBCW3eP7F+gVoULdjU
+					y3a2GZPsXLt6/bAkELGULkFAGQDFpvuU/Rxi
+					3NvxIDQJGCx+DqrWGvxZMLmCHBB2UeV7BNE9
+					RmDFudTJoJEvVGYeonjZ3WebdeJmcsIE3xYE
+					IA4ZP2H+xQFFjQcRd8CmiLwq5CatFvfhzoVz
+					LuV7z9vcnQHxWm/mbfYXfafHnIbyPDiMvkrj
+					8bBXdgPxHex4X+Rl+Q== )
+			86400	RRSIG	DNSKEY 7 4 86400 (
+					20210103125958 20201204125958 14605 jonas-dewinter.sb.uclllabs.be.
+					McRr0xXh/vMCpgtkdgIHxCC7bORj3kBslQng
+					dNSDheR/MnBXv9XXWdIRCi6pNt/d0MBBCYAJ
+					hVMaOhnMzmk3ayXrMGkuYWik/Tlp9oNceGt6
+					+z2nvrEduWI/PTHmssjMbERLtL4PaUwLt1k1
+					pf63vxUE93uWlUNloDgZN5Bs7dck1XucYSnq
+					BcxKHDdNxFBfnWYQX6MKuOKzARC5AHoBq5LA
+					WZ1YyHDO9oRXTEtTQpmeRPGwNvDCH+LDgaKQ
+					8sENEs674osOwymAFFIMiaKJUl8Zm1pOO7yF
+					9YdILI4Qf1t4T+1MNIpmAagnSs+VTER2qfch
+					A2BUVJtNfdTHiX3Qx2NGcO+G2Pffl7+gtF+6
+					xL2pr9wSQuL0EQge4pz8pO1UOuyZKyg8/FMn
+					/DKTFVfbVVjQhVteMv3Qvn31TJ9l0sp87PPr
+					0Wz8v+cSQpdA9wmyr2lcy7BMSmxBWFiwRyDS
+					E3L1tJJvKu2VxP9AjrUcUPjo2PkFpK4dLI+3
+					AYe0TwDYOa24xGGmLImx4VZyu6R4nRYEoRht
+					/d2/tUl4yk0TtLpWGI41pLGicf3zWOGPEOL9
+					TkQTS1FDyxw36REuj6vV1XwD9SYHOHSxv+zT
+					nIMhyF+DUgMUq/MddsJU0rRDJ9c8Axq4HHsf
+					4VxJBZ/RccSCkdY+hZc/9matbt3+340bvmA= )
+			0	NSEC3PARAM 1 0 10 47C622CB1B90EFC7
+			0	RRSIG	NSEC3PARAM 7 4 0 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					ldFBKwuQxZMOaBIpIIYPrTD769G0HHOjT8oB
+					L/GUPwjlv9uID2DbH/AM0sUJSH/9XSxVPjpE
+					ovsTXi4OpTJRM+sxLbxYnk2fgaKTUdnXc6qi
+					e/FOjlFtwhyrJKQdXaSXvaqsARja19GOiPqN
+					UUpJf7BBK/+bjv5AmJTkHOqWZ3OeE9rcHwgi
+					cioRsSSheZQBKCjO5GwOQtDsIgY/L3FIPFXB
+					UGpz10z1oKYZsPgO+V5NkyZPuXz8Y97lco19
+					NBdJOiHasHxA5QlYJ6fqVEFZ2dxvQ+h5EBWD
+					vIr0M50XNyQT1mAFPGQRdIU7iOsz1Zz0pm5w
+					o0Q1oZRUPeq2Pi7ekA== )
+			86400	CAA	0 iodef "mailto:jonas.dewinter@student.ucll.be"
+			86400	CAA	0 issue "letsencrypt.org"
+			86400	RRSIG	CAA 7 4 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					AOEmn7VmtwSGgm8R+OVFrx/YiVlzjZFxcHIc
+					bhDTLhgkfearOFb6rVVtAhvc75gzPXkl0B/C
+					Zz/DClI/Le/ojaISq2CT3bGZjL/wgR9vKwJS
+					5VP9z6opE4tU37M9tCU5zvacf5KMBXzB+uOn
+					2ZCaHjj/QDkfCa9NKU9MyVEioxWQto0/U8dZ
+					QrMuye6CXKasRkL9AqhO29Gp9nB5KQ+Ftd22
+					4MAzYkIkWwwdO2ZA91Knx6sM+4vSYVbVH4i0
+					Q4Hf5snwDZGbdD5cKxHG1iasfoceqfkNVBYM
+					f8x5TAyNT++jM0BWhKwqKWjuxLMooOnrQDt6
+					JrBRq4JSwy3LHdX4zQ== )
+foobar.jonas-dewinter.sb.uclllabs.be. 86400 IN NS ns.jonas-dewinter.sb.uclllabs.be.
+			86400	A	193.191.177.162
+hallo.jonas-dewinter.sb.uclllabs.be. 86400 IN NS ns.jonas-dewinter.sb.uclllabs.be.
+			86400	A	193.191.177.162
+hey.jonas-dewinter.sb.uclllabs.be. 86400 IN NS ns.jonas-dewinter.sb.uclllabs.be.
+			86400	A	193.191.177.162
+mail.jonas-dewinter.sb.uclllabs.be. 86400 IN A 193.191.177.162
+			86400	RRSIG	A 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					Dq347A51WTMJnoUF2jhqjgblGQgeJj867/Ix
+					ZXYxjmXZfcdMJuT5kahw94IyUIWe+pd9YkrR
+					AsqOyvOZPL9nVKZdkm+bKFSRusFYOYaK1usF
+					aP4VFtnWTLekqFyegxbsl01stLumeGG/3PFH
+					AQaZgUleS7wVMS7hWBMaW+8hk6Oj0X8yCXYg
+					NrTFuZcsXAdSeGlv8n0RVQ2bfgeABFWpks8W
+					SlTi4dFxujifxWtqS8D4w5+bgCRnY03iPSvB
+					i+6hEGlv25H2M6FGg8GS30PI53t0g/4fIEZd
+					MPAvNP7Le5KkwwcqAYzvYEUhNO+Bg8ilwujQ
+					60fddipT/leXBgmBIA== )
+mwoah.jonas-dewinter.sb.uclllabs.be. 86400 IN NS ns.jonas-dewinter.sb.uclllabs.be.
+			86400	A	193.191.177.162
+newtest.jonas-dewinter.sb.uclllabs.be. 86400 IN	NS ns.jonas-dewinter.sb.uclllabs.be.
+			86400	A	193.191.177.162
+newzone.jonas-dewinter.sb.uclllabs.be. 86400 IN	NS ns.jonas-dewinter.sb.uclllabs.be.
+			86400	A	193.191.177.162
+nieuw.jonas-dewinter.sb.uclllabs.be. 86400 IN NS ns.jonas-dewinter.sb.uclllabs.be.
+			86400	A	193.191.177.162
+nieuwstezone.jonas-dewinter.sb.uclllabs.be. 86400 IN NS	ns.jonas-dewinter.sb.uclllabs.be.
+			86400	A	193.191.177.162
+nogeentest.jonas-dewinter.sb.uclllabs.be. 86400	IN NS ns.jonas-dewinter.sb.uclllabs.be.
+			86400	A	193.191.177.162
+ns.jonas-dewinter.sb.uclllabs.be. 86400	IN A 193.191.177.162
+			86400	RRSIG	A 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					IgN9V3c9m9o6WfkF3gzaFyKUNrmjF2sYzZfU
+					wmpd2/IfyijYFN7GraB+tq735Mmf92ep2oTm
+					SlhHe92OgL6mYH0a/w72BjfHwiWKfvXic8M+
+					gq0+FAmIin1G09THFbVpjQXaLzkGpkk6t63p
+					ocueRN6izvLDSHVec0ye1G/L7c7Ia6D4Cg7Q
+					JhbJy/E34IJpMGocT2+URqzWaJj/hRFrNMFY
+					XR8L1HXX2q7ZdmoPIJKIqtgFlRyT79c21arY
+					fNb+YlwSutOUc7ulF/xJnTmDtPHJciuLOQbd
+					a7LWnSYg45HkWYkShemWI6lueIpNLfBaayoY
+					Ma7vaZBWeyqIO2doJw== )
+			86400	AAAA	2001:6a8:2880:a077::a2
+			86400	RRSIG	AAAA 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					C5+4ZBwYXLuPTpjPkQ+zrZPWJQCbi8sRAlCw
+					w78Qe+IiuHq6BU2mjd5Z6AIZ3dLNSZ75l3iM
+					a9hEq1w4KXVlWFqEgSpOi5mCgM/I6buc8eem
+					bNIyqmwXM85D9jRUZiVybjZoh7lgkz6j6Hqp
+					195RJOcxF3WZx74Db/b24DGkKoTiIXmDtLtc
+					DMkDqzC3nBNOTw2i4K6KnSKYuU8dr0ASs88d
+					HkfegxTZEjZkJU1BQ1zln9k8mh9HmXzKMQxv
+					d37Sm2g5kLoTQDswe1lSFOHC9axoSnyG0C/A
+					HHpoKb/FL2WNsPnQEjE0hosqaBLSdP/n+V0a
+					xyFoloV+aRmFMt2S1w== )
+secure.jonas-dewinter.sb.uclllabs.be. 86400 IN A 193.191.177.162
+			86400	RRSIG	A 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					S5o+qY002LZgYTl08p9PPWmiJpFUQtnrd6+a
+					D3goXgtX2KbtCsFpihLHB13Akg/V9JrltWsF
+					+2ApgcJstteMINX9DJbyZfGG87MNwZNeNt8F
+					aaA8Nc6axsvtPTynttah5CNlTlUbhZJrripH
+					h1+u5Am+MU49A9SF+d6haprDHLMClw74JR+3
+					o9hbBZVAlp2wKq6ACcw8LzgR+62MKf8MaSp1
+					NnD722mE3AG4Xm8c/UgVrB/ik7atutMo54Q8
+					tBNNbAIcKYM1l+a/c/WqkKpfui94r8yU7ZJS
+					3yo4dWZZ8MEr4UsdK1LTCPmzWvr1XKc9sCRb
+					p0Ub7GA4LO/nA1byEA== )
+			86400	CAA	0 iodef "mailto:jonas.dewinter@student.ucll.be"
+			86400	CAA	0 issue "letsencrypt.org"
+			86400	RRSIG	CAA 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					SiFjEqOTUTXvmRgFJG0nTNVQRqGHpX5qniCF
+					g/6WSwAKy+FVPXoTnsnt3ePDybNoi9CqFqoX
+					lTJAD5H0WkmpYh1TDcADjll7MBKTC46pZuWi
+					mImJxrnKJ4ZEjw+mmpRCzBSwR1atOPgVbOBf
+					SsXPgTvTSbNzGLNMRmh43FbSEb9Flao97MkS
+					7Lbko554GRjNZIdid/dYbUEsQ6vLWREcJ7kh
+					9dn78lhV2A7GNVQeRpALc60zcEujNuF8kpHR
+					Ie30t6Wgu9wc5WNpyegozf4+muaITCgk9GfB
+					CEZ7LtYvpoGE+JL7ob7rf28o6UafgX8Remj2
+					7OuW6Z/Pe1DlYmiRrQ== )
+supersecure.jonas-dewinter.sb.uclllabs.be. 86400 IN A 193.191.177.162
+			86400	RRSIG	A 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					KMcSk6lL2FC8Hk1EzDlkJON3rv1cYrIhAOoe
+					Ch7ZlPrz3WFxTW17WjLt/BYX7lElLfNp41gx
+					s6yw5eb3hhjDG6XIe+wfXzTM7zNryAky42PD
+					4wgvBkoiLFi0lJr1moDybdCGnbqzaXc4fcA6
+					yuu49A6BdGATC0OXs2X8ZMT3vAz960wowKHF
+					kqOJ4hQH1HP071e62GrWYMe/1iziz+Y168Yd
+					nPFobh0x/Gk2emEL7BR/aevOOlbrtuHJTk45
+					LJ76K8w+A3x4OPdeBJoahuMbjOldkyRPQ0C/
+					Bz9nxRiylg0VdLbwSIXTo+7QyPgryH8UOwFQ
+					npzNKWQEIBLR2Hv8RA== )
+			86400	CAA	0 iodef "mailto:jonas.dewinter@student.ucll.be"
+			86400	CAA	0 issue "letsencrypt.org"
+			86400	RRSIG	CAA 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					wsNRSH4LQvF9c1gg9OaLZoGZW9dXuWD2OqsT
+					5qry/62JEgLiikwsO23utrzHB8pO6Zv1SLG4
+					JYNwP+zLS77FUZM+9d+JVQ2qTP1j5xBgg7tU
+					+K9PAMZLLyvsMs3TsziNYPoI6QnMurowYALg
+					MHXq2jcA3v46383k0g+n0j6j1aFdmLYXIp7V
+					1B+9KmUJKVjF2A8zTfdSZi+OskQcxSJidv1I
+					gZbDIyq/O0AmrR38tE/pZ7gCk8704a5AnnCK
+					5QU5Nx26dL3AE5FnoJaL4VNlp/kQvM+p8H9L
+					foFB9HGish5UQBxpRAgh9gE7INyvnjqG3UpZ
+					Ks5PBTke/917I98t9w== )
+test.jonas-dewinter.sb.uclllabs.be. 86400 IN A 193.191.177.254
+			86400	RRSIG	A 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					D9sHCG5s9GRCDtutlFacK9G6vnxGqWzyCpXn
+					DPrX0xHPHJ0Hmqa/HdaVDMvWhhCjuYr+jWjv
+					y40lNytUN/97DniJPdy1G6JOlcNZLwpvsHA2
+					mO3K14kg/uC6CG6Tf2F+T7bSXjMQTTQaNa0L
+					BcFTCtkU0Pk4+0T+E+AGb4fI8rwhLEv0LANW
+					xSWFwffBpQ8RjU+Y2LYCwalFU6n+RdSDATid
+					sAM8yYc2uR49pSfz4fkh82LdBv8mETdJK38F
+					kpetiUuwbT4NDEzeMQByNaFmVijWtZKp2Wzb
+					jwm4cGDt91laApQdPdaW+ohmqsbVQac9msm+
+					BBz4w9tQSgDfDEiLaQ== )
+testje.jonas-dewinter.sb.uclllabs.be. 86400 IN NS ns.jonas-dewinter.sb.uclllabs.be.
+			86400	A	193.191.177.162
+www.jonas-dewinter.sb.uclllabs.be. 86400 IN A 193.191.177.162
+			86400	RRSIG	A 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					rF1vCtywhOIn9ga+ueipuSEEZQeKA0m3VaUS
+					ZhAknYWc0/Ag40ugk2WBHryLjxIYV4OgEcPU
+					rfWojf4yQTnp4of9bJeMCP0qvPv7xngRG1Yx
+					YrfWuPhsVXUnSyBAAxSE4sL3dIW8lqOBA5eb
+					5yYZOEAnNtBfUvzaHnDNl5VWAArCo+SyzHPz
+					Ij09O4FXZfO2ZbkGbXdN9NEyTKk+uG/Xfmgs
+					wQWUsqQus7VYc98+7hg+RUuTKo7gKoAJryVE
+					KArjZ0eAhpPepzayORKXWzgPf3vuM7/0g4Vu
+					y4dMcZU68LqRnFqM2tqyZp67n1UAUEHukAEK
+					8mXabfehTMZXy4uLbQ== )
+www1.jonas-dewinter.sb.uclllabs.be. 86400 IN A 193.191.177.162
+			86400	RRSIG	A 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					bEeTNJg+WD367rdnP+H4e6disvgxP3gSpP42
+					KN2zvYPW02jZEpCBHdsIxWmlc4NcLATpcnio
+					g4DkuBCKS9WF3+vU+cP91cOg7jbeF9gs+s1j
+					Lr30aQOBAJT4EeOFpipCHhhtDkPgm0K0w4CI
+					lO9pCHPbeqD6468z9Yn+nkhfnwPQ2svCopKA
+					S+mETbF/pgebfNmP+qRGvOKmf5diJRGzeMFL
+					SHZZt3ryMF1QpUGIuXgm7y9OzE3uFTkwrsxj
+					6GkryFAZE0s2JmXxDuNHgruyOFNYT5eUKAlh
+					j6oioiHWWnc+KfqM2F8igm8xt26u7XtqlwHS
+					OMwQJ0hhEAaXt0ikug== )
+www2.jonas-dewinter.sb.uclllabs.be. 86400 IN A 193.191.177.162
+			86400	RRSIG	A 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					E8JGTNC0SwNx0hqJyMvWe7rY1GloeP0DbWVp
+					IL79KG2kiU7Zuz84okkapIzkPJ5/zkSvfF1L
+					lbNlnc4TX1gnmtF5Tbc4g8bZjbxMqrEyJBwA
+					S96BXfUAmuifr0PS6/ewpyBVpbPNcJ7ixMmR
+					0ZxCWNBJueFVK+Gs4my4wbn/0Nlo0tz1uSEt
+					1muuYKj9GTIPcrHexu5AgN3IUZ5jqh/FsmtF
+					JdWD9fPxkMMaKAIpgem3z16BBeBrvB8JEG2V
+					1YIsD0sot8f6elUBirtlGNM82VIfAgkp8BUR
+					B+P8caeU8IdF8s8r8NOb30hfAkMyEDuBRhMS
+					E5rJEY0DXkhfuNyw6g== )
+3U7P63F1KGUH5R03182KPT6BJPCSAQHS.jonas-dewinter.sb.uclllabs.be.	86400 IN NSEC3 1 1 10 47C622CB1B90EFC7 (
+					59B1SNUF379NIL36JN8NO9IQ6TP508V2
+					A RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					ttE4kLT5MAvqjvLsMDaOnXS7Lwopn8Tlo96p
+					Dbxv2Nr/oRmv+o3gYHaSWfrspMorXwUMCfRd
+					G2gkIGUCmsA4fnc3sWs9pud5Fwyy66+SiC2Y
+					wSKbt5EOxoWSy+c6wge12f27d48gokAqKZq9
+					Dip3c0nf/0UGjCICf7G/nYk4n3YlPPeTFa3X
+					qjt2hpkTytsJSslPUrNza87W6pUdwXVzQejD
+					3lOul15HPItOyEvaIqoBaQekWITZvZQiq79I
+					5MGEHHcSRdHdNLPIhYlgJu/XBD2yEN0iXx3k
+					s+cgsJnvoGPvlTSVWKBlaLWtbBwfk6/x+0Kr
+					H3id6SYZUwMNhmwksQ== )
+59B1SNUF379NIL36JN8NO9IQ6TP508V2.jonas-dewinter.sb.uclllabs.be.	86400 IN NSEC3 1 1 10 47C622CB1B90EFC7 (
+					62CDMPD8QRR277KAO6MLBK1TB6F9SLTU
+					A RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					w/Do9V7RcS5dBPEMTwEKqrBsKMg8hca0dl6c
+					rt4eWx/yGZhd4ZIZ10oEf8B7TQ9cxfDEBkhs
+					iq1BV00pLFepmB1K3vfQfK50hNd6x94tvYCu
+					XxTsuk1v/blat6ovIoHSkUpTq1zpNGsYRVMQ
+					ofzF7t7MU+SL8MRUzeR/gyY+/TBaeSEinO/p
+					7u1fJWsxwsr/snCFtpl/ZvMuEmXFaNVdyCYC
+					pjfk4DwGcE+X3D1fnhERNYy9u+L7BLpZ/+hP
+					msliHr1eGQ1RL1yff7dPN0Knyb/1wiNlay/e
+					e6nLmdHcwHSQXNKkQqd6mD9Lam3V6wGcSI3j
+					kN6dfdaS8kgrcuOjng== )
+EBN6G3PP9SNDDJJJ57G1FJ65CULOPNSK.jonas-dewinter.sb.uclllabs.be.	86400 IN NSEC3 1 1 10 47C622CB1B90EFC7 (
+					M06DQLG90D7U1DINGIJ97N8NREN2464N
+					A RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					gmWHUV/X+VnnJXm5YKgkgz/93KvPhGrMMrcF
+					vF8nsoY3P1a/PbOzjZV8+yu0fCso9VALSZ1B
+					ybsfufcdvs0vyv63cVwPwhuyGaOpSZn2ru4w
+					jWGLawBIRGYfuzc1SSnpnCzsrxxuVmTA1tmE
+					50z+SOTZk01hXsYq+3g+aj8EigUiDC0K48+e
+					/Zjv7CBuDjNjZ3jYqTnjs+mW8I8TMofYzC09
+					5GVI8TefMYrSIMRHefgx1ma9p+p2FOaP5Q/5
+					2tQYm70Iapm8d4IaSvwiatikM6wy+XNrEAv1
+					6NWrC8pVypwc3LWPOPDv/q6gi1661dUT+DuU
+					zbSq0jT2LUR63sbh4w== )
+M06DQLG90D7U1DINGIJ97N8NREN2464N.jonas-dewinter.sb.uclllabs.be.	86400 IN NSEC3 1 1 10 47C622CB1B90EFC7 (
+					PHQ0I8T099M3SLDO698AOBIFJMERSLNM
+					A RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					0Ky/yRu66lf5CBCY1d1ckLBGWgVMmmG4Rvjp
+					wZZ1FsqQVRMlQ2TY6fUc3hUWSuuyLVy5ARYU
+					qcDxxhUC3g9dVVSFDV/cP6SsOPPxdbvVn874
+					YQNMSdGs4bKVLB1CSom70oFQbrUhyEtUa7Q6
+					VTv6rxOb4aqL6AUBCccWEgRNhoWKg1IYsDi9
+					ikEaXQu57snMyzMc2pwK0kZPphZC/xIPyzUh
+					tUnjpeJBtRDN7BzVmgBnQ5uBSWM7KpeuvKOh
+					dqq4Jb7NjBai7GcpGE6B7+s3j83AgxKz9qxx
+					LMw7fbHmAIVDSwwUSw9R7QZRwn5ZxDfxexoN
+					2jnkpN6dNv03MPTtxA== )
+PHQ0I8T099M3SLDO698AOBIFJMERSLNM.jonas-dewinter.sb.uclllabs.be.	86400 IN NSEC3 1 1 10 47C622CB1B90EFC7 (
+					SGOR0NTV1ORRENRRPL00BQ2JR1QK0HO6
+					A NS SOA AAAA RRSIG DNSKEY NSEC3PARAM
+					CAA )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					fE6A1F4qivscpSr5xX7wLqII89B+Wmo6aXx7
+					WqO5OsBk26jkFxSsemoU1e/2gclPEAx/KOOb
+					WN9f09ifmC9mzw0O5N5NApHhQ0oqgFl3oopE
+					xVJC+NzOYy/EEAZzNHZ2qNdxcXO3NfpeViLk
+					kD2GMdPqi9B16ZxlcH5MeJrmHcTVCR+rjWie
+					U9rOLE3p+rTvFuOaLxmW1gyceita8ia5uAb2
+					A3Z9AqKdwtLokgf2mdxMtcDGGpEKbda0fBzC
+					23s7Rt0T2a5SDzKqK0SW/B3J0K7xg6eUicmB
+					NXV/eAJ755e3+2XesgAqYNl/AVoNhqQQgF1q
+					yu8bKRp5dXRAFju6sQ== )
+SGOR0NTV1ORRENRRPL00BQ2JR1QK0HO6.jonas-dewinter.sb.uclllabs.be.	86400 IN NSEC3 1 1 10 47C622CB1B90EFC7 (
+					T2M8U6RHPLJVU7EGAMQON8DRJCJ8GDDA
+					A RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					dVsjfijVaVfEqfAJ7F+dFusmMMltkZvzo57t
+					4sgTFMtIXIZSt7dgc4cYf6/D644gG2uwFx9e
+					WqeHZnJPg4iqXdX3GAHYUWIa2nrc+i91+LC1
+					prMAMaKWEkrrP7EINtpZZL2Gs7HfAhew4Zdg
+					n4CXxSbdw7VZbTrxZ+AdTL660uREghr0kShv
+					pE665YwmMLv+aFP2KjYRNVs8qjGzR6YinF45
+					W3kjeKl+TUy2SbkAUFDMss711undjV76p9ip
+					9BRTYn4o3MF7jAcr+pQlzJ8rLyk8BPgA9txR
+					gSY51kzwVY2yMZFB2L2HfcO0S26kGDNBeSxM
+					qjCajZM7RT06W2n3Rw== )
+T2M8U6RHPLJVU7EGAMQON8DRJCJ8GDDA.jonas-dewinter.sb.uclllabs.be.	86400 IN NSEC3 1 1 10 47C622CB1B90EFC7 (
+					VIJHR5HOA5CS26RGDU6ET9K8SRL7UM65
+					A AAAA RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					HYe8rdtElH61ChlLD+TLioEsPQD2lzqX02yC
+					+PMF7uM23Na54SreBvEJQY4bQDQaS0VKjCc7
+					XurTbkvovOQJPtnzrobLQZhofAGyITk+rZIN
+					e7/9pTPcWh1HqUa4rLFyCc9gq6Var50/EEAX
+					TxwO9wBJKFypKM/l66y1sPmGRxSHy2XuNY3x
+					XCn9zcy9vEAPGledOCbczdu/MrFycpP6IpoP
+					BH5bpexkZXEechqlawUKo3aKqI6eyXF0C2rM
+					QtYU31vdHrgUGV1B8Z08s+Fj58NAkBLjO+Yu
+					B7hmkd1dQ4rytP/7Y3Bg+6Z9HfN3tHCKn9bL
+					cmqxbjs4dOkVUCQcNA== )
+VIJHR5HOA5CS26RGDU6ET9K8SRL7UM65.jonas-dewinter.sb.uclllabs.be.	86400 IN NSEC3 1 1 10 47C622CB1B90EFC7 (
+					3U7P63F1KGUH5R03182KPT6BJPCSAQHS
+					A RRSIG
+					CAA )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					xu2Bcji03+MUoIQd6i4bwc5yoGh/65MLbrRI
+					onbnfY2oPRglOB2OzFbgFG9SN4airNMMEgx+
+					qF7QWer9F+egpFAler1iE5996CY2NmDqhRIr
+					ihGxNBf3ls0lr56E2T08DjoOS9+TSs9vmKiv
+					ldTgaDhXncZniEwg2eUNgi1ff/1kROMhp6v4
+					ncygqoYIVkke8L7MTHo0VbILMry+4qEuu+ti
+					mdBVWVpeF6E39YX7EGsjViZkSQ50QYaF5AMw
+					UaL9uj/GnJHE2tKOXaRsrHvhGg05H19ijC0Q
+					dpdJNTCZCvpP0a8AksVRU6MhcV4U0L/F0ER3
+					vAQQGghhdK7b5SRKcw== )
+62CDMPD8QRR277KAO6MLBK1TB6F9SLTU.jonas-dewinter.sb.uclllabs.be.	86400 IN NSEC3 1 1 10 47C622CB1B90EFC7 (
+					EBN6G3PP9SNDDJJJ57G1FJ65CULOPNSK
+					A RRSIG
+					CAA )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20210103125958 20201204125958 3830 jonas-dewinter.sb.uclllabs.be.
+					DpiMfSiGWwBUGE45XdULy7qfofMzOV9jVrz8
+					Y2MyHtFhdMlyqS45WWUpINycmuxga8GxCrM7
+					OI76tvcUVoM4pspaMOtvU0SOGESpfqlxLO7d
+					J+tfMrLRhgIiW4eDP4v0+IlXk+wrFgTsrJ41
+					vcFNmZ/EXyIz9NXFl59aITb9GUrTUKQS2fpV
+					viNacGOWt1mCGTZE3C2Aov9vND36eVmj90DP
+					q7M1CX3fCRwirmZ+TydZgx9YyFxl2d9o4LcC
+					vMS1tRAZhWrfmrcU1avEmgPxHx0LRDwE87Tm
+					V4pqSdvRqYgPUJBO7gtWKqvd0kIfqMoJ6LFA
+					l8JgUodKMFt6KKoz8g== )

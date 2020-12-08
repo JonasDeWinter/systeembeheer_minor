@@ -1,0 +1,13 @@
+[Unit]
+Description = Apply iptables rules
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'iptables-restore < /etc/iptables/rules.v4'
+ExecStart=/bin/sh -c 'iptables-restore < /etc/iptables/rules.v6'
+ExecStart=/usr/sbin/netfilter-persistent start
+ExecStop=/usr/sbin/netfilter-persistent stop
+
+
+[Install]
+WantedBy=network-pre.target

@@ -1,0 +1,185 @@
+- hosts: localhost
+  tasks:
+        - name: Install Apache
+          apt: name=apache2 state=latest 
+
+        - name: start Apache
+          service:
+                  name: apache2
+                  state: started
+
+        - name: make main index file
+          file:
+                path: /var/www/html/index.html
+                state: touch
+        - name: fill main index file
+          blockinfile:
+                  path: /var/www/html/index.html
+                  backup: yes
+                  block: |
+                        <h1>welcome</h1>
+
+        - name: make first config file (mainsite)
+          file:
+                path: /etc/apache2/sites-available/mainsite-ansible.conf
+                state: touch
+        - name: configuration of mainsite-ansible.conf
+          blockinfile:
+                  path: /etc/apache2/sites-available/mainsite-ansible.conf
+                  backup: yes
+                  block: |
+                          <VirtualHost *:80>
+                                ServerName jonas-dewinter.sb.uclllabs.be
+                                DocumentRoot /var/www/html
+
+                                ErrorLog ${APACHE_LOG_DIR}/error.log
+                                CustomLog ${APACHE_LOG_DIR}/access.log combined
+                          </VirtualHost>
+        - name: enable site
+          command: a2ensite mainsite-ansible.conf
+          notify:
+          - restart apache2
+
+        - name: make www1 directory
+          file:
+                path: /var/www/html/www1
+                state: directory
+
+        - name: make www1 index file
+          file:
+                path: /var/www/html/www1/index.html
+                state: touch
+        - name: fill main index file
+          blockinfile:
+                  path: /var/www/html/www1/index.html
+                  backup: yes
+                  block: |
+                        <h1>www1</h1>
+
+        - name: make www1 config file
+          file:
+                path: /etc/apache2/sites-available/www1-ansible.conf
+                state: touch
+        - name: configuration of www1-ansible.conf
+          blockinfile:
+                  path: /etc/apache2/sites-available/www1-ansible.conf
+                  backup: yes
+                  block: |
+                          <VirtualHost *:80>
+                                ServerName www1.jonas-dewinter.sb.uclllabs.be
+                                DocumentRoot /var/www/html/www1
+
+                                <Directory /var/www/html/www1/>
+                                        AllowOverride All
+                                </Directory>
+
+                                ErrorLog ${APACHE_LOG_DIR}/www1-error.log
+                                CustomLog ${APACHE_LOG_DIR}/www1-access.log combined
+                          </VirtualHost>
+       
+
+        - name: create secret map for www1
+          file:
+                  path: /var/www/html/www1/private
+                  state: directory
+
+        - name: make www2 index file
+          file:
+                path: /var/www/html/www1/private/index.html
+                state: touch
+        - name: fill main index file
+          blockinfile:
+                  path: /var/www/html/www1/private/index.html
+                  backup: yes
+                  block: |
+                        <h1>dit is private</h1>
+        - name: make htaccess  file
+          file:
+                path: /var/www/html/www1/private/.htaccess
+                state: touch
+
+        - name: fill htaccess file
+          blockinfile:
+                  path: /var/www/html/www1/private/.htaccess
+                  backup: yes
+                  block: |
+                        AuthUserFile /var/www/html/www1/private/.htpasswd
+                        AuthType Basic
+                        AuthName "Secret folder"
+                        Require valid-user
+        
+        
+        - htpasswd:
+                path: /var/www/html/www1/private/.htpasswd
+                name: check
+                password: 'ch3ck'
+                owner: root
+                group: www-data
+                mode: 0640
+                
+
+        - name: enable site
+          command: a2ensite www1-ansible.conf
+          notify:
+          - restart apache2
+
+
+        - name: make www2 directory
+          file:
+                path: /var/www/html/www2
+                state: directory
+
+        - name: make www2 index file
+          file:
+                path: /var/www/html/www2/index.html
+                state: touch
+        - name: fill main index file
+          blockinfile:
+                  path: /var/www/html/www2/index.html
+                  backup: yes
+                  block: |
+                        <h1>www2</h1>
+        - name: make www2 toupper file
+          file:
+                path: /var/www/html/www2/toupper.php
+                state: touch
+        - name: fill www2 toupper file
+          blockinfile:
+                  path: /var/www/html/www2/toupper.php
+                  backup: yes
+                  block: |
+                        <?php
+                        echo strtoupper(htmlspecialchars($_GET["code"]));
+                        ?>
+        - name: make www1 config file
+          file:
+                path: /etc/apache2/sites-available/www2-ansible.conf
+                state: touch
+        - name: configuration of www2-ansible.conf
+          blockinfile:
+                  path: /etc/apache2/sites-available/www2-ansible.conf
+                  backup: yes
+                  block: |
+                          <VirtualHost *:80>
+                                ServerName www2.jonas-dewinter.sb.uclllabs.be
+                                DocumentRoot /var/www/html/www2
+                                
+                                <Directory /var/www/html/www2/>
+                                        AllowOverride All
+                                </Directory>
+
+
+                                ErrorLog ${APACHE_LOG_DIR}/www2-error.log
+                                CustomLog ${APACHE_LOG_DIR}/www2-access.log combined
+                          </VirtualHost>
+        - name: enable site
+          command: a2ensite www2-ansible.conf
+          notify:
+          - restart apache2
+
+  handlers:
+    - name: restart apache2
+      service: name=apache2 state=restarted
+
+
+
